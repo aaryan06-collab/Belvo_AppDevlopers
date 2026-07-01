@@ -17,18 +17,13 @@ export default function Header() {
             className="uppercase text-xs"
             style={{ color: colors.textMuted }}
           >
-            Good Morning
+            Cofounder{" "}
           </Text>
 
           <View className="flex-row items-center mt-1">
-            <Text className="text-3xl font-bold" style={{ color: colors.text }}>
-              Rahul Singh
+            <Text className="text-2xl font-bold" style={{ color: colors.text }}>
+              Find your match
             </Text>
-
-            <View
-              className="w-2 h-2 rounded-full ml-2"
-              style={{ backgroundColor: colors.success }}
-            />
           </View>
         </View>
 
@@ -40,19 +35,21 @@ export default function Header() {
               backgroundColor: colors.card,
             }}
           >
+            <Ionicons name="search-outline" size={22} color={colors.text} />
+          </Pressable>
+          <Pressable
+            className="rounded-full p-3 border"
+            style={{
+              borderColor: colors.border,
+              backgroundColor: colors.card,
+            }}
+          >
             <Ionicons
-              name="notifications-outline"
+              name="ellipsis-horizontal-outline"
               size={22}
               color={colors.text}
             />
           </Pressable>
-
-          <View
-            className="w-12 h-12 rounded-full justify-center items-center"
-            style={{ backgroundColor: "#6BA7D6" }}
-          >
-            <Text className="text-white font-bold">RS</Text>
-          </View>
         </View>
       </View>
     </View>
